@@ -1,6 +1,6 @@
 # css_typography
 ## How to handle typography with css
 Various examples to use for teaching my classes.
-[Harry Roberts](www.smashingmagazine.com/author/harry-roberts/)
+- [Smashing Article](smaching_article/README.me) and tutorial by Harry Roberts 
 
 I would like to add some tutorial stuff
