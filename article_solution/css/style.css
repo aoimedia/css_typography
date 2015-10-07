@@ -10,14 +10,14 @@
   MAIN
 *------------------------------------*/
 html {
-  font-family: Cambria, Georgia, "Times New Roman", Times, serif;
+  font-family: 'Lora', serif;
   color: #333;
-  font-size: 18px;
+  font-size: 112.5%; /* With User agent font-size at 16px --> 16*112.5% = 18px; source: http://lamb.cc/typograph/ */
 }
 
 body {
-  line-height: 1.4444rem; /* basis = 18*1.4444 = 26px */
-  padding-top: 72px;
+  line-height: 1.4444; /* basis = 18*1.4444 = 26px --> our magic number*/
+  padding-top: 26px;
   background: #fff
 }
 
@@ -31,7 +31,6 @@ article {
 
 article:hover {
   background: url(../images/grid.png) center -6px repeat #fff;
-  background-size: 960px 26px
 }
 
 .left {
@@ -42,46 +41,49 @@ article:hover {
   TYPE
 *------------------------------------*/
 
-h1, h2, h3, h4, h5, h6, p, blockquote {
+h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
   flex: 0 1;
-  max-width: 460px;
+  max-width: 540px;
 }
 
 /*--- HEADINGS ---*/
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 26px;
+  font-family: 'Bitter', serif;
   font-weight: 700;
   text-align: left;
 }
 
 h1 {
-  font-size: 1.4444rem;
-  /* 26px --> 26 ÷ 18 = 1.4444 */
-  line-height: 1.4444rem/* 26px --> 26 ÷ 26 = 1 */
+  font-size: 2rem; /* 18px * 2rem = 36px. line-height: 1.4444*36px 51.9984px */
+  line-height: 1.4444em; /* 26px/36px = 0.72222*2 = 1.4444 (double up when smaller than 1 */
+  margin: 1.4444rem 0 0.7222rem 0;
 }
 
 h2 {
-  font-size: 1.2777rem;
-  /* 23px --> 23 ÷ 18 = 1.2777 */
-  line-height: 1.4444rem/* 26px --> 26 ÷ 23 = 1.1304 */
+  font-size: 1.6667rem;
+  /* 30px --> 30 ÷ 18 = 1.6667 */
+  line-height: 1.7333em; /* 30px --> 26*2 ÷ 30 = 1.7333 */
+  padding: 0.7222rem 0 0.7222rem 0;
 }
 
 h3 {
-  font-size: 1.1111rem;
-  /* 20px --> 20 ÷ 18 = 1.25 */
-  line-height: 1.4444rem/* 22.4px --> 24 ÷ 20 = 1.2 */
+  font-size: 1.3333rem;
+  /* 24px --> 24 ÷ 18 = 1.3333 */
+  line-height: 1.0833em; /* 24px --> 26 ÷ 24 = 1.0833 */
+  padding: 0.7222rem 0 0.7222rem 0;
 }
 
 h4 {
-  font-size: 1.125rem;
-  /* 18px --> 18 ÷ 16 = 1.125 */
-  line-height: 1.333em/* 22.4px --> 24 ÷ 18 = 1.3333333(3) */
+  font-size: 1.1111rem;
+  /* 20px --> 20 ÷ 18 = 1.1111 */
+  line-height: 1.3em; /* 20px --> 26 ÷ 20 = 1.3 */
+  padding: 0.7222rem 0 0.7222rem 0;
 }
 
 h5, h6 {
   font-size: 1rem;
-  /* 16px --> 16 ÷ 16 = 1 */
-  line-height: 1.5em/* 22.4px --> 24 ÷ 16 = 1.5 */
+  /* 18px --> 18 ÷ 18 = 1 */
+  line-height: 1.4444em/* 18px --> 26 ÷ 18 = 1.4444 */
 }
 
 /*--- PARAGRAPHS ---*/
@@ -96,7 +98,7 @@ p+p {
 
 /*--- LISTS ---*/
 ul, ol {
-  margin-bottom: 22.4px/* Remember, if your magic number is
+  margin-bottom: 1.4444rem /* Remember, if your magic number is
     different to this, use your own. */
 }
 
@@ -105,7 +107,7 @@ ul {
 }
 
 ul ul, ol ol {
-  margin: 0 0 0 60px
+  margin: 0 0 0 1rem;
 }
 
 /*--- QUOTES ---*/
@@ -145,16 +147,16 @@ a:active, a:focus {
 *------------------------------------*/
 
 img {
- max-width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
 .images {
   flex: 1 1;
   margin-bottom: 1.4444rem;
-  width:100%;
-  max-width: auto;
-  text-align:center;
+  width: 100%;
+  max-width: 540px;
+  text-align: center;
 }
 
 /*--- CAPTIONS ---*/
