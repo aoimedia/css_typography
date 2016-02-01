@@ -9,6 +9,7 @@ This article/tutorial covers the basic stuff and some neat tricks.
 * **Measure (line length)**
 * **Leading (line height)**
 * **The magic number**
+
 ---
 ### [Responsive Text](responsive_text/)
 How to make text responsive. This examples keeps the line length at an optimal reading size: 45-85 charachters.
