@@ -10,7 +10,7 @@ This article/tutorial covers the basic stuff and some neat tricks.
 * **Leading (line height)**
 * **The magic number**
 ---
-### [Article Solution](article_solution/)
-Demonstrates all typography principles for an html article with text, images and illustrations.
+### [Responsive Text](responsive_text/)
+How to make text responsive. This examples keeps the line length at an optimal reading size: 45-85 charachters.
 
 ---
