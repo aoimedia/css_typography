@@ -9,6 +9,7 @@ This article/tutorial covers the basic stuff and some neat tricks.
 * Measure (line length)
 * Leading (line height)
 * The magic number
+
 ---
 ### [Responsive Text](https://github.com/nomanson/css_typography/tree/master/responsive_text) ##
 
